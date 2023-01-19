@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Snack Game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        display: flex;
+        /* width: 1000px; */
+        background-color: black;
+        justify-content: center;
+      }
+
+      .tombol {
+        width: 200px;
+        background-color: black;
+        align-content: flex-end;
+        padding: 10px;
+        margin: 10px auto;
+      }
+
+      .btn {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        font-size: 10px;
+        color: #eee;
+        background-color: #333;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .btn.up {
+        margin: 10px auto;
+      }
+
+      .btn.bottom {
+        margin: 10px auto;
+      }
+
+     .auto {
+        display: flex;
+        justify-content:space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <canvas id="canvas" width="500" height="300"></canvas>
+    </section>
+    <div class="tombol">
+      <div class="up btn">UP</div>
+      <div class="auto">
+        <div class="left btn">LEFT</div>
+        <div class="right btn">RIGHT</div>
+      </div>
+      <div class="bottom btn">BOTTOM</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
