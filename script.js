@@ -111,7 +111,7 @@ function eatApple() {
 }
 
 function draw() {
-  createRect(0,0,canvas.width, canvas.height, "black")
+  // createRect(0,0,canvas.width, canvas.height, "black")
   createRect(0,0, canvas.width, canvas.height, 'gray')
   for( var i = 0; i < snake.tail.length; i++) {
     createRect(snake.tail[i].x + 2.5, snake.tail[i].y + 2.5, snake.size - 5, snake.size - 5, 'white')
